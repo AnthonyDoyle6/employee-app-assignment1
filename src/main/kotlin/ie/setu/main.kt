@@ -2,6 +2,7 @@ package ie.setu
 
 import kotlin.math.round
 
+
 val firstName = "Joe"
 val surname = "Soap"
 val gender = 'm'
@@ -10,6 +11,9 @@ val grossSalary = 67543.21
 val payePercentage = 38.5
 val prsiPercentage = 5.2
 val annualBonus = 1450.50
+//Update attempt. Assistance from StackOverflow
+val newAnnualBonus = annualBonus.updateannualBonus(2000)
+
 val cycleToWorkMonthlyDeduction = 54.33
 
 fun main(args: Array<String>){
@@ -20,6 +24,12 @@ fun main(args: Array<String>){
         input = menu()
         when(input) {
             1 -> println("Monthly Salary: ${getMonthlySalary()}")
+            /*
+            I attempted to filter the monthly salary. Reference: https://kotlinlang.org/docs/collection-filtering.html#filter-by-predicate
+            val longerThan4 = MonthlySalary.filter { it.length > 4 }
+            println(longerThan4)
+
+             */
             2 -> println("Monthly PRSI: ${getMonthlyPRSI()}")
             3 ->println("Monthly PAYE: ${getMonthlyPAYE()}")
             4 -> println("Monthly Gross Pay: ${getGrossMonthlyPay()}")
