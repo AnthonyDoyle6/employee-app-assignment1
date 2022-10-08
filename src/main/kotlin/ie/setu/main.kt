@@ -5,6 +5,9 @@ import kotlin.math.round
 
 val firstName = "Joe"
 val surname = "Soap"
+
+//Find Reference: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/find.html
+listOf("Soap").find { it.startsWith("So") }
 val gender = 'm'
 val employeeID = 6143
 val grossSalary = 67543.21
@@ -28,8 +31,7 @@ fun main(args: Array<String>){
             I attempted to filter the monthly salary. Reference: https://kotlinlang.org/docs/collection-filtering.html#filter-by-predicate
             val longerThan4 = MonthlySalary.filter { it.length > 4 }
             println(longerThan4)
-
-             */
+            */
             2 -> println("Monthly PRSI: ${getMonthlyPRSI()}")
             3 ->println("Monthly PAYE: ${getMonthlyPAYE()}")
             4 -> println("Monthly Gross Pay: ${getGrossMonthlyPay()}")
